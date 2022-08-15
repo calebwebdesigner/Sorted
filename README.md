@@ -7,7 +7,7 @@ A project management web app 📝.
 
 **What is Sorted.?**
 
-Sorted. is a project management web app, built as a way to practice my React skills. React-router is used, along with Firebase, Firestore, Firebase Auth, and Firebase Storage. There are custom hooks, contexts, and components. It was a good way to practice my React and Firebase skills 😊.
+Sorted. is a project management web app built with React. React-router was used, along with Firebase, Firestore, Firebase Auth, and Firebase Storage. There are custom hooks, contexts, and components. I utilised both global and modulised CSS styling (whichever was most suitable for the component in question). It was a good way to practice my React and Firebase skills 😊.
 
 <br/>
 
