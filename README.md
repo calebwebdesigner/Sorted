@@ -13,11 +13,11 @@ Sorted. is a project management web app built with React. React-router was used,
 
 **Some Screenshots:**
 
-![image](https://github.com/calebwebdesigner/Sorted/edit/main/ignore/v1-screenshots/login.png) 
+![image](https://github.com/calebwebdesigner/Sorted/blob/main/ignore/v1-screenshots/login.png) 
 
-![image](https://github.com/calebwebdesigner/Sorted/edit/main/ignore/v1-screenshots/dashboard.png) 
+![image](https://github.com/calebwebdesigner/Sorted/blob/main/ignore/v1-screenshots/dashboard.png) 
 
-![image](https://github.com/calebwebdesigner/Sorted/edit/main/ignore/v1-screenshots/project.png) 
+![image](https://github.com/calebwebdesigner/Sorted/blob/main/ignore/v1-screenshots/project.png) 
 
 <br/>
 
