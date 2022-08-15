@@ -3,8 +3,6 @@ A project management web app 📝.
 
 **Find it here: https://sorted-9ddf4.web.app/**
 
-![image](https://github.com/calebwebdesigner/Sorted/edit/main/ignore/v1-screenshots/dashboard.png) 
-
 <br/>
 
 **What is Sorted.?**
@@ -17,15 +15,12 @@ Sorted. is a project management web app, built as a way to practice my React ski
 
 ![image](https://github.com/calebwebdesigner/Sorted/edit/main/ignore/v1-screenshots/login.png) 
 
+![image](https://github.com/calebwebdesigner/Sorted/edit/main/ignore/v1-screenshots/dashboard.png) 
+
+![image](https://github.com/calebwebdesigner/Sorted/edit/main/ignore/v1-screenshots/project.png) 
+
 <br/>
 
 **Credits:**
 
-Sorted. was designed and created by me, calebwebdesigner.
-
-<p align="center">Copyright © 2022, calebwebdesigner</p>
-
-
-
-
-
+Sorted. was designed and created by me. Copyright © 2022, calebwebdesigner
