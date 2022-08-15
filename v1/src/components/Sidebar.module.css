@@ -1,0 +1,100 @@
+.sidebar {
+  width: 300px;
+  min-width: 300px;
+  background: var(--primary-color);
+  min-height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  color: var(--secondary-color);
+  box-shadow: 3px 3px 6px #00000050;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  position: fixed;
+  height: 100%;
+  width: inherit;
+}
+
+.userDisplay {
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 40px 30px;
+}
+/* bottom line */
+.userDisplay:after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  height: 1px;
+  width: 80%;
+
+  /* border becomes part of padding, won't add to size */
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.links {
+  margin-left: 20px;
+
+  /* keep space the same as .userDisplay padding bottom */
+  margin-top: 40px;
+}
+.links a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+  color: var(--secondary-color);
+  box-sizing: border-box;
+}
+.links img {
+  width: 24px;
+  margin-right: 10px;
+  filter: invert(100%);
+}
+.links a:global(.active) {
+  color: var(--text-color);
+  background: var(--bg-color);
+  border-radius: 20px 0 0 20px;
+}
+.links a:global(.active img) {
+  filter: invert(4%);
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  /* same distance as .links img margin-right */
+  gap: 10px;
+
+  /* keep space the same as .userDisplay padding bottom */
+  padding-top: 40px;
+}
+.socials img {
+  width: 28px;
+}
+.socialsText {
+  display: flex;
+  justify-content: center;
+}
+.socialsText a {
+  text-decoration: none;
+}
+/* top line */
+.socials:after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  top: 0;
+  height: 1px;
+  width: 80%;
+  border-top: 1px solid var(--accent-color);
+}

@@ -1,0 +1,70 @@
+.navbar {
+  width: 100%;
+  padding: 24px 0;
+  box-sizing: border-box;
+  position: relative;
+
+  /* keep bottom gap same size as gaps in sidebar*/
+  margin-bottom: 40px;
+}
+/* bottom line */
+.navbar:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1.5px solid var(--accent-color);
+}
+.navbar ul {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.logo img {
+  margin-right: 10px;
+  height: 45px;
+  margin-top: -2px;
+}
+
+.pageTitle {
+  /* allow for 1 px right border which is added onto the padding, so both side's spaces are equal */
+  padding-right: 19px;
+  margin-right: 20px;
+  position: relative;
+}
+/* right line */
+.pageTitle:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -50%;
+  height: 200%;
+  border-right: 1px solid var(--accent-color);
+}
+
+/* <Link> = a */
+.navbar a:first-child {
+  margin-right: 20px;
+}
+.navbar button:global {
+  box-shadow: 1px 1px 4px #00000050;
+}
+.navbar button:global:hover {
+  box-shadow: 0.5px 0.5px 2px #00000050;
+}
+/* show button as already pressed down */
+.navbarButtonActive {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
+  box-shadow: 0.5px 0.5px 2px #00000050 !important;
+}

@@ -1,0 +1,72 @@
+/* whole section */
+.projectSummarySection {
+  /* keep same distance as add comment bottom margin, is here incase window size is smaller than content, so content doesn't sit flush with the bottom of the page, but is nicely spaced above it */
+  margin-bottom: 20px;
+}
+
+/* project card */
+.projectSummary {
+  background-color: var(--secondary-color);
+  border-radius: 4px;
+
+  /* keep padding same as comment cards */
+  padding: 20px;
+}
+
+/* project card content */
+.dueDate {
+  margin: 10px 0 5px;
+}
+.details {
+  margin: 20px 0;
+  line-height: 1.5rem;
+}
+.assignedTo {
+  font-weight: 600;
+}
+.assignedUsers {
+  display: flex;
+  margin-top: 20px;
+}
+/* .avatar = <Avatar/> */
+.assignedUsers div:global(.avatar) {
+  margin-right: 10px;
+}
+
+/* delete project button */
+.deleteButton {
+  margin-top: 20px;
+}
+/* confirm delete modal */
+.modalBg {
+  background-color: #0e0e0e76;
+
+  /* cover screen, position above all elements besides modal-box (prevents clicking on other elements too) */
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  /* align modal-box */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modalBox {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+
+  /* keep padding same as comment cards and project card */
+  padding: 20px;
+
+  /* center all elements nicely */
+  text-align: center;
+}
+.modalButtonWrapper button {
+  margin: 10px 10px 0;
+}
+.modalBox span {
+  color: #ff0000;
+}

@@ -1,0 +1,8 @@
+.projectDetails {
+  display: grid;
+  grid-template-columns: 3.25fr 2fr;
+  align-items: start;
+
+  /* same space as what's in the sidebar/onlineUsers/etc. */
+  grid-gap: 40px;
+}

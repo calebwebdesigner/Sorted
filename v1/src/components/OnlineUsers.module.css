@@ -1,0 +1,63 @@
+.userList {
+  width: 250px;
+  min-width: 250px;
+  padding: 0 30px 30px;
+  box-sizing: border-box;
+  background: var(--secondary-color);
+  color: var(--heading-color);
+  box-shadow: 3px 3px 6px #00000050;
+}
+
+/* titleWrapper is used to perfectly vertical align the text */
+.titleWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+
+  /* navbar height is 91px, to make text and bottom line be in line with navbar elements, make height 91px too*/
+  height: 91px;
+}
+.titleWrapper h4 {
+  text-align: right;
+}
+/* bottom line */
+.titleWrapper:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.userListItem {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 0 20px auto;
+}
+.userListItem div:global(.avatar) {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+/* user online/offline status dot */
+.userStatusDot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary-color);
+
+  /* push dot to bottom inline with avatar, offset -px to negate 2px border, move 12px to left to overlay avatar */
+  margin: auto 0 -2px -12px;
+}
+.userOffline {
+  background: #767676;
+}
+.userOnline {
+  background: #0ebb50;
+}

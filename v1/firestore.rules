@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  // match the documents within any collection/database
+  match /databases/{database}/documents {
+
+    // match user docs within users collection, user_id is the name of the wildcard as it's what each document is named, the uid of the user it's about
+    match /users/{user_id} {
+      // allow user to read and create user docs, if they are logged in
+      // when an authenticated user performs a request against Cloud Firestore, the auth variable is populated with the user's uid (request.auth.uid) 
+      allow read, create: if request.auth != null;
+      // if id of user making request = id of document, let user update it
+      allow update: if request.auth.uid == user_id;
+    }
+
+    // match project docs within projects collection
+    match /projects/{project_id} {
+      allow read, create, update: if request.auth != null;
+      // if a user's uid matches the id of the createdBy property of the doc, then the user can delete the doc
+      allow delete: if request.auth.uid == resource.data.createdBy.id;
+    }
+  }
+}

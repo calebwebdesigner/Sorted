@@ -1,0 +1,40 @@
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(320px, 1fr));
+
+  /* keep these spaces the same as sidebar/users component/etc. */
+  grid-gap: 40px;
+  margin-top: 40px;
+}
+
+/* all text, including "there are no projects" text */
+.projectList p {
+  font-weight: 600;
+}
+
+/* each card */
+.projectList a {
+  background-color: var(--secondary-color);
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 6px #00000020;
+  text-decoration: none;
+  color: var(--heading-color);
+}
+
+/* assigned user avatars */
+.assignedTo {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--accent-color);
+}
+.projectList ul {
+  display: flex;
+}
+.projectList li {
+  margin-right: 10px;
+}
+.projectList div:global(.avatar) {
+  width: 34px;
+  height: 34px;
+}
