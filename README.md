@@ -36,4 +36,4 @@ Not so bad, thanks for asking.
 
 **Credits:**
 
-Sorted. was designed and created by me. Copyright © 2022, calebwebdesigner
+Sorted. was designed and created by me. Copyright © 2022, calebwebdesigner.
